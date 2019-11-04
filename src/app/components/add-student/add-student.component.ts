@@ -41,8 +41,8 @@ export class AddStudentComponent implements OnInit {
   /* Reactive book form */
   submitBookForm() {
     this.studentForm = this.fb.group({
-      student_name: ['', [Validators.required]],
-      student_email: ['', [Validators.required]],
+      studentName: ['', [Validators.required]],
+      studentEmail: ['', [Validators.required]],
       section: ['', [Validators.required]],
       subjects: [this.subjectArray],
       dob: ['', [Validators.required]],
