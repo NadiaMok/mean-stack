@@ -2,10 +2,10 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 let Student = new Schema({
-  student_name: {
+  studentName: {
     type: String
   },
-  student_email: {
+  studentEmail: {
     type: String
   },
   section: {

@@ -17,6 +17,7 @@ export class StudentsListComponent implements OnInit {
 
   constructor(private studentApi: ApiService) {
     this.studentApi.GetStudents().subscribe(data => {
+      console.log(data);
       this.StudentData = data;
       this.dataSource = new MatTableDataSource<Student>(this.StudentData);
       setTimeout(() => {
