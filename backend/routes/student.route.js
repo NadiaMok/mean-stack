@@ -41,7 +41,7 @@ studentRoute.route('/read-student/:id').get((req, res) => {
 
 
 // Update student
-studentRoute.route('/update-student/:id').put((req, res, next) => {
+studentRoute.route('/update/:id').put((req, res, next) => {
   Student.findByIdAndUpdate(req.params.id, {
     $set: req.body
   }, (error, data) => {
